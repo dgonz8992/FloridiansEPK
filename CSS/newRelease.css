@@ -1,0 +1,30 @@
+.newReleaseContainer{
+    position: absolute;
+    background: linear-gradient(45deg, #a100ff, #4000ff);
+    color: white;
+    height: 600px;
+    width: 350px;
+    border-style: solid;
+    border-color: #850000;
+    border-radius: 70px;
+    left: 20px;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.newReleaseTitle{
+    font-family: Helvetica, serif;
+    text-align: center;
+}
+
+.newReleasePictureContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.newReleasePicture{
+    width: 300px;
+    border-radius: 50px;
+}

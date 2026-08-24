@@ -1,0 +1,101 @@
+body{
+    background-color: #2e3457;
+    height: 2000px;
+    position: relative;
+    background: url("../FloridiansPictures/_DSF8790-2 1.jpeg");
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.headerContainer{
+    height: 500px;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: 100;
+}
+
+.header{
+    position: sticky;
+    display: flex;
+    background-color: black;
+    border-radius: 100px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    bottom: -90px;
+    min-width: 641px;
+    z-index: 101;
+
+}
+
+.title{
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 10px;
+    flex-shrink: 0;
+}
+
+.logos{
+    height: 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.instagramPicture, .youtubePicture{
+    height: 50px;
+}
+
+.backgroundImage{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 82%;
+    border-radius: 70px;
+}
+
+.bio{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: lightblue;
+    border-radius: 70px;
+    width: 667px;
+    z-index: 101;
+}
+
+.bioHeader{
+    display: flex;
+    justify-content: center;
+    color: #5594d3;
+    font-weight: 700;
+    padding-top: 8px
+}
+
+.bioParagraph{
+    padding: 0 8px 15px 20px;
+    font-family: Helvetica, serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.footer{
+    position: sticky;
+    z-index: 100;
+    color: white;
+    background-color: black;
+    text-align: center;
+    top: 1700px;
+    font-size: 20px;
+}

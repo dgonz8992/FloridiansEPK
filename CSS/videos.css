@@ -1,0 +1,24 @@
+.videosSection{
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.videoTitle{
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.videos{
+}
+
+video{
+    max-width: 90%;
+    height: 500px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
