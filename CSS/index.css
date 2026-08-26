@@ -1,6 +1,5 @@
 body{
     background-color: #2e3457;
-    height: 2000px;
     position: relative;
     background: url("../FloridiansPictures/_DSF8790-2 1.jpeg");
     background-size: cover;
@@ -9,16 +8,17 @@ body{
     background-attachment: fixed;
 }
 
+/*Header*/
 .headerContainer{
     height: 500px;
     position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
     z-index: 100;
+    justify-items: center;
 }
 
 .header{
-    position: sticky;
     display: flex;
     background-color: black;
     border-radius: 100px;
@@ -27,7 +27,7 @@ body{
     justify-content: center;
     top: 10px;
     bottom: -90px;
-    min-width: 641px;
+    width: 100%;
     z-index: 101;
 
 }
@@ -44,6 +44,10 @@ body{
     flex-shrink: 0;
 }
 
+.headerPicture{
+    height: 50px;
+}
+
 .logos{
     height: 50px;
     display: flex;
@@ -53,31 +57,37 @@ body{
 
 }
 
-.instagramPicture, .youtubePicture{
-    height: 50px;
+/* Front Page*/
+.firstPage{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    column-gap: 5%;
 }
 
-.backgroundImage{
-    position: absolute;
-    top: 90px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 82%;
+.middleSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.bioImage{
+    width: 100%;
     border-radius: 70px;
 }
 
 .bio{
-    margin-left: 50%;
-    transform: translateX(-50%);
     background-color: lightblue;
     border-radius: 70px;
-    width: 667px;
-    z-index: 101;
+    margin-top: 20px;
+    z-index: 102;
+    font-stretch: auto;
 }
 
 .bioHeader{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: #5594d3;
     font-weight: 700;
     padding-top: 8px
@@ -87,15 +97,29 @@ body{
     padding: 0 8px 15px 20px;
     font-family: Helvetica, serif;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 130%;
 }
 
-.footer{
-    position: sticky;
-    z-index: 100;
-    color: white;
-    background-color: black;
-    text-align: center;
-    top: 1700px;
-    font-size: 20px;
+
+@media (max-width: 800px){
+    .header{
+        width: 708px;
+    }
+
+ .middleSection{
+     width: 318px;
+ }
+
+ .newReleaseContainer{
+     width: 159px;
+ }
+
+ .sidebarContainer{
+     width: 90px;
+ }
+
+ .newReleasePicture{
+     width: 143px;
+ }
+
 }

@@ -1,14 +1,16 @@
+.sidebarContainer{
+    display: flex;
+
+}
+
 .sidebar{
-    position: sticky;
     background-color: black;
     color: white;
     height: 600px;
     z-index: 200;
-    width: 100px;
-    border-radius: 70px;
-    left: 1350px;
-    margin-top: -500%;
+    width: 90px;
     top: 110px;
+    border-radius: 70px;
     display: flex;
     flex-direction: column;
 }
@@ -27,7 +29,7 @@
 }
 
 .sidebarMore{
-    font-size: 20px;
+    font-size: 120%;
     font-family: Helvetica, serif;
     font-weight: bold;
 }

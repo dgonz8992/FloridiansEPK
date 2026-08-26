@@ -1,22 +1,21 @@
 .newReleaseContainer{
-    position: absolute;
     background: linear-gradient(45deg, #a100ff, #4000ff);
     color: white;
-    height: 600px;
-    width: 350px;
+    height: 30%;
+    min-height: 600px;
     border-style: solid;
     border-color: #850000;
     border-radius: 70px;
-    left: 20px;
-    top: 110px;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    width: 100%;
+    align-items: center;
 }
 
 .newReleaseTitle{
     font-family: Helvetica, serif;
     text-align: center;
+    font-size: 200%;
 }
 
 .newReleasePictureContainer{
@@ -25,6 +24,6 @@
 }
 
 .newReleasePicture{
-    width: 300px;
     border-radius: 50px;
+    width: 90%;
 }
