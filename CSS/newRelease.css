@@ -1,29 +1,40 @@
-.newReleaseContainer{
+.newRelease{
     background: linear-gradient(45deg, #a100ff, #4000ff);
     color: white;
-    height: 30%;
-    min-height: 600px;
     border-style: solid;
+    width: 500px;
+    justify-content: center;
     border-color: #850000;
     border-radius: 70px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
     align-items: center;
+
 }
 
 .newReleaseTitle{
     font-family: Helvetica, serif;
     text-align: center;
     font-size: 200%;
+    flex: 2;
 }
 
 .newReleasePictureContainer{
-    display: flex;
-    justify-content: center;
+    flex: 1;
 }
 
 .newReleasePicture{
     border-radius: 50px;
-    width: 90%;
+    height: 300px;
+}
+
+@media (max-width: 750px){
+
+    .newReleasePicture{
+        width: 70%;
+    }
+
+    .newReleaseTitle{
+        font-size: 100%;
+    }
+
 }

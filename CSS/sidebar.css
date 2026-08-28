@@ -1,6 +1,8 @@
 .sidebarContainer{
     display: flex;
-
+    position: fixed;
+    top: 110px;
+    right: 0;
 }
 
 .sidebar{
@@ -9,27 +11,91 @@
     height: 600px;
     z-index: 200;
     width: 90px;
-    top: 110px;
+    top: 10px;
     border-radius: 70px;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 .sidebarLogo{
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-
-}
-
-.spotifyLink{;
-    align-content: center;
-    flex-shrink: 100;
 }
 
 .sidebarMore{
     font-size: 120%;
     font-family: Helvetica, serif;
     font-weight: bold;
+    text-align: center;
+}
+
+.sidebarPicture{
+    height: 50px;
+}
+
+@media (max-width: 1103px){
+
+    .sidebarContainer{
+        top: 20%;
+    }
+
+    .sidebar{
+        width: 80px;
+        margin-right: 1.5%;
+        height: 400px;
+    }
+
+    .sidebarPicture{
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .sidebar {
+        height: 350px;
+        width: 50px;
+    }
+
+    .sidebarPicture{
+        height: 30px;
+    }
+
+}
+
+
+@media (max-height: 540px) {
+
+    .sidebar {
+        height: 300px;
+        width: 20px;
+    }
+
+    .sidebarPicture{
+        height: 35px;
+    }
+
+    .sidebarMore{
+        font-size: 80%;
+    }
+}
+
+@media (max-height: 370px) {
+
+    .sidebar {
+        height: 260px;
+        width: 20px;
+    }
+
+    .sidebarPicture{
+        height: 30px;
+    }
+
+    .sidebarMore{
+        font-size: 75%;
+    }
 }
