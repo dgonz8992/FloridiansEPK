@@ -40,6 +40,10 @@
     cursor: pointer;
 }
 
+.sidebarMore:active, .sidebar a:active{
+    opacity: 0.8;
+}
+
 @media (max-width: 1425px){
 
     .sidebar{
