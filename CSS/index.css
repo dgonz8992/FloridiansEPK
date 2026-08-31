@@ -12,14 +12,13 @@ body {
 body::before {
     content: "";
     position: fixed;
-
     top: -100px;
     right: 0;
     bottom: -100px;
     left: 0;
 
     background-image: url("../FloridiansPictures/_DSF8790-2 1.jpeg");
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
