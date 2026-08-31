@@ -1,7 +1,8 @@
 .sidebarContainer{
     position: fixed;
-    top: 110px;
+    top: 50%;
     right: 0;
+    transform: translateY(-25%);
     height: 100%;
 }
 
@@ -42,10 +43,6 @@
 
 @media (max-width: 1425px){
 
-    .sidebarContainer{
-        top: 20%;
-    }
-
     .sidebar{
         width: 80px;
         margin-right: 1.5%;
@@ -72,34 +69,14 @@
 
 }
 
-@media (max-width: 511px){
+@media (max-width: 500px){
     .sidebar {
-        height: 325px;
+        height: clamp(260px, 50dvh, 325px);
         width: 45px;
     }
 
-    .sidebarContainer{
-        top: 25%;
-    }
-
     .sidebarMore{
         font-size: 90%;
     }
 }
 
-
-@media (max-height: 715px) {
-
-    .sidebar {
-        flex: 1;
-        height: 60%;
-    }
-
-    .sidebarPicture{
-        width: 50%;
-    }
-
-    .sidebarMore{
-        font-size: 90%;
-    }
-}
