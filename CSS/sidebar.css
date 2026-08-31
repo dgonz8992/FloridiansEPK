@@ -2,6 +2,7 @@
     position: fixed;
     top: 110px;
     right: 0;
+    height: 100%;
 }
 
 .sidebar{
@@ -87,34 +88,18 @@
 }
 
 
-@media (max-height: 540px) {
+@media (max-height: 715px) {
 
     .sidebar {
-        height: 300px;
-        width: 20px;
+        flex: 1;
+        height: 60%;
     }
 
     .sidebarPicture{
-        height: 35px;
+        width: 50%;
     }
 
     .sidebarMore{
-        font-size: 80%;
-    }
-}
-
-@media (max-height: 390px) {
-
-    .sidebar {
-        height: 260px;
-        width: 40px;
-    }
-
-    .sidebarPicture{
-        height: 30px;
-    }
-
-    .sidebarMore{
-        font-size: 75%;
+        font-size: 90%;
     }
 }

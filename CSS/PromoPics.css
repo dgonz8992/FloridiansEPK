@@ -1,6 +1,7 @@
 .promoPicContainer{
     width: min(1200px, calc(100% - 230px));
     margin: 20px auto;
+    justify-items: center;
 }
 
 .promoPicGrid{
