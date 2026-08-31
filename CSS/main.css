@@ -1,0 +1,64 @@
+
+/* Front Page*/
+.mainSectionContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mainSection{
+    width: min(90%, 1250px);
+    justify-content: center;
+
+}
+
+.bioImage{
+    width: 100%;
+    border-radius: 70px;
+}
+
+.bio{
+    background-color: #000000;
+    border-radius: 70px;
+    z-index: 102;
+    font-stretch: auto;
+}
+
+.bioHeader{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    padding-top: 8px;
+    margin-bottom: -5px;
+}
+
+.bioParagraph{
+    text-align: center;
+    padding: 0 10px 15px 10px;
+    font-family: Helvetica, serif;
+    font-weight: 500;
+    line-height: 130%;
+    color: white;
+}
+
+@media (max-width: 1040px) {
+
+    .bioParagraph {
+        padding: 0 10px 10px 20px;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .bioParagraph {
+        padding: 0 15px 15px 25px;
+        font-size: 13px;
+    }
+}
+
+
+

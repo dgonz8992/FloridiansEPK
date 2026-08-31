@@ -1,6 +1,7 @@
 .videosContainer{
-    width: min(1200px, calc(100% - 230px));
-    margin: 0 auto 20px;}
+    width: 90%;
+    margin: 0 auto 20px;
+}
 
 .videoTitle{
     font-family: Georgia, serif;
@@ -52,9 +53,6 @@
 
 
 @media (max-width: 1040px) {
-    .videosContainer {
-        width: calc(100% - 140px);
-    }
 
     .videoGridVertical {
         grid-template-columns: repeat(2, minmax(120px, 900px));

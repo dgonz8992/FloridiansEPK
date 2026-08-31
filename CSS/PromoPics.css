@@ -1,5 +1,5 @@
 .promoPicContainer{
-    width: min(1200px, calc(100% - 230px));
+    width: 90%;
     margin: 20px auto;
     justify-items: center;
 }
@@ -29,9 +29,6 @@
 }
 
 @media (max-width: 1040px) {
-    .promoPicContainer {
-        width: calc(100% - 150px);
-    }
 
     .promoPicGrid {
         grid-template-columns: repeat(2, minmax(140px, 1fr));

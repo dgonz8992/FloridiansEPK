@@ -7,38 +7,83 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="CSS/index.css">
-		<link rel="stylesheet" href="CSS/sidebar.css">
+		<link rel="stylesheet" href="CSS/general.css">
+		<link rel="stylesheet" href="CSS/header.css">
+		<link rel="stylesheet" href="CSS/main.css">
 		<link rel="stylesheet" href="CSS/videos.css">
-		<link rel="stylesheet" href="CSS/newRelease.css">
 		<link rel="stylesheet" href="CSS/PromoPics.css">
+		<link rel="stylesheet" href="CSS/sidebar.css">
+		<link rel="stylesheet" href="CSS/popups.css">
+
+
 	</head>
 
 	<body>
 
 		<header class="headerContainer">
 			<nav class="header">
-				<div class="logos">
-					<a href="https://www.instagram.com/thefloridiansband/?hl=en" target="_blank">
-						<img class="headerPicture" src="FloridiansPictures/Logos/IMG_2855.WEBP" alt="Instagram">
-					</a>
+<!--				<div class="logos">-->
+<!--					<a href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">-->
+<!--						<img class="headerPicture" src="FloridiansPictures/Logos/spotify.WEBP" alt="Spotify">-->
+<!--					</a>-->
+<!--				</div>-->
+				<div class = "headerButtonContainer" id="openStreamingPlatforms">
+				<button class="headerButton">Listen to the Floridians</button>
 				</div>
-				<div class="logos">
-					<a href="https://www.instagram.com/thefloridiansband/?hl=en" target="_blank">
-						<img class="headerPicture" src="FloridiansPictures/Logos/x.PNG" alt="X">
-					</a>
-				</div>
+
+				<dialog class="streamingPlatformPopup" id="streamingPlatformsPopup">
+					<video class="popupBackgroundVideo" autoplay muted loop playsinline>
+						<source src="FloridiansPictures/copy_509F8D40-8C6A-4B45-8958-5988C7917666.MP4" type="video/mp4">
+					</video>
+
+					<div class="popupContent">
+						<button id="closeStreamingPlatforms">X</button>
+						<h2>Streaming Platforms</h2>
+						<div class="streamingPlatformList">
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+							</a>
+						</div>
+					</div>
+				</dialog>
+
 				<h1 class="title">The Floridians</h1>
-				<div class="logos">
-					<a class="youtubeLink" href="https://m.youtube.com/@TheFloridians?ra=m" target="_blank">
-						<img class="headerPicture" src="FloridiansPictures/Logos/IMG_2856.WEBP" alt="YouTube">
-					</a>
+
+				<div class = "headerButtonContainer" id="">
+					<button class="headerButton">Listen to the Floridians</button>
 				</div>
-				<div class="logos">
-					<a href="https://www.instagram.com/thefloridiansband/?hl=en" target="_blank">
-						<img class="headerPicture" src="FloridiansPictures/Logos/bandcamp.PNG" alt="Bandcamp">
-					</a>
-				</div>
+				<dialog class="morePopup" id="morePopup">
+					<h2>Stream</h2>
+					<p>Hi Ian</p>
+					<iframe class="videoVertical"
+					        src="https://www.youtube.com/embed/_6HzLIJPH2A"
+					        title="The Ground Performance"
+					        loading="lazy"
+					        allowfullscreen>
+					</iframe>
+					<button id="closeMore">X</button>
+				</dialog>
 			</nav>
 		</header>
 
@@ -79,11 +124,13 @@
 				<iframe class="videoHorizontal"
 						src="https://www.youtube.com/embed/TG09lIoA9UI"
 						title="The Ground Performance"
+						loading="lazy"
 						allowfullscreen>
 				</iframe>
 				<iframe class="videoHorizontal"
 						src="https://www.youtube.com/embed/TG09lIoA9UI"
 						title="The Ground Performance"
+						loading="lazy"
 						allowfullscreen>
 				</iframe>
 			</div>
@@ -92,21 +139,25 @@
 				<iframe class="videoVertical"
 				        src="https://www.youtube.com/embed/_6HzLIJPH2A"
 				        title="The Ground Performance"
+				        loading="lazy"
 				        allowfullscreen>
 				</iframe>
 				<iframe class="videoVertical"
 			        src="https://www.youtube.com/embed/_6HzLIJPH2A"
 			        title="The Ground Performance"
+		            loading="lazy"
 			        allowfullscreen>
 				</iframe>
 				<iframe class="videoVertical"
 				        src="https://www.youtube.com/embed/_6HzLIJPH2A"
 				        title="The Ground Performance"
+				        loading="lazy"
 				        allowfullscreen>
 				</iframe>
 				<iframe class="videoVertical"
 				        src="https://www.youtube.com/embed/_6HzLIJPH2A"
 				        title="The Ground Performance"
+				        loading="lazy"
 				        allowfullscreen>
 				</iframe>
 			</div>
@@ -114,23 +165,25 @@
 		</section>
 		</main>
 
-		<aside class="sidebarContainer">
-			<nav class="sidebar" aria-label="Streaming platforms">
-				<a href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-					<img class="sidebarPicture" src="FloridiansPictures/Logos/spotify.WEBP" alt="Spotify">
-				</a>
-				<a href="https://music.apple.com/us/artist/the-floridians/1614185028" target="_blank">
-					<img class="sidebarPicture" src="FloridiansPictures/Logos/apple.PNG" alt="Apple Music">
-				</a>
-				<a href="https://soundcloud.com/thefloridiansband" target="_blank">
-					<img class="sidebarPicture" src="FloridiansPictures/Logos/soundcloud.WEBP" alt="SoundCloud">
-				</a>
-				<a href="https://tidal.com/artist/4366032" target="_blank">
-					<img class="sidebarPicture" src="FloridiansPictures/Logos/tidal.WEBP" alt="Tidal">
-				</a>
-				<button class="sidebarMore">More +</button>
-			</nav>
-		</aside>
+<!--		<aside class="sidebarContainer">-->
+<!--			<nav class="sidebar" aria-label="Streaming platforms">-->
+<!--				<a href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">-->
+<!--					<img class="sidebarPicture" src="FloridiansPictures/Logos/spotify.WEBP" alt="Spotify">-->
+<!--				</a>-->
+<!--				<a href="https://music.apple.com/us/artist/the-floridians/1614185028" target="_blank">-->
+<!--					<img class="sidebarPicture" src="FloridiansPictures/Logos/apple.PNG" alt="Apple Music">-->
+<!--				</a>-->
+<!--				<a href="https://soundcloud.com/thefloridiansband" target="_blank">-->
+<!--					<img class="sidebarPicture" src="FloridiansPictures/Logos/soundcloud.WEBP" alt="SoundCloud">-->
+<!--				</a>-->
+<!--				<a href="https://tidal.com/artist/4366032" target="_blank">-->
+<!--					<img class="sidebarPicture" src="FloridiansPictures/Logos/tidal.WEBP" alt="Tidal">-->
+<!--				</a>-->
+<!--				<button class="sidebarMore">More +</button>-->
+<!--			</nav>-->
+<!--		</aside>-->
+
+		<script src="Javascript/StreamingPlatforms.js"></script>
 	</body>
 
 </html>
