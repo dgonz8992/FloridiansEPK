@@ -1,0 +1,38 @@
+.promoPicContainer{
+    width: min(1200px, calc(100% - 230px));
+    margin: 20px auto;
+}
+
+.promoPicGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.promoPic{
+    width: 100%;
+    border-radius: 30px;
+    border: solid 1px #350000;
+}
+
+.promoPicTitle{
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-align: center;
+    color: lightgrey;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+@media (max-width: 1040px) {
+    .promoPicContainer {
+        width: calc(100% - 150px);
+    }
+
+    .promoPicGrid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+}

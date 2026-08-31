@@ -1,7 +1,6 @@
 .videosContainer{
     width: min(1200px, calc(100% - 230px));
-    margin: 0 auto;
-}
+    margin: 0 auto 20px;}
 
 .videoTitle{
     font-family: Georgia, serif;
@@ -15,15 +14,14 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
-
+    justify-content: center;
 }
 
 .videoGridVertical{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
-
-
+    justify-content: center;
 }
 .videoHorizontal{
     width: 100%;
@@ -62,12 +60,11 @@
     }
 
     .videoGridVertical {
-        grid-template-columns: repeat(2, minmax(90px, 900px));
+        grid-template-columns: repeat(2, minmax(120px, 900px));
     }
 
     .videoGridHorizontal{
-        grid-template-columns: minmax(210px, 900px);
-        justify-content: center;
+        grid-template-columns: minmax(250px, 900px);
     }
 }
 

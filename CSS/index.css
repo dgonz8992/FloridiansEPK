@@ -4,21 +4,31 @@ html {
 
 body {
     margin: 0;
-    min-height: 100dvh;
-
-    background-image: url("../FloridiansPictures/_DSF8790-2 1.jpeg");
-    background-position: center 45%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    isolation: isolate;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+
+    top: -100px;
+    right: 0;
+    bottom: -100px;
+    left: 0;
+
+    background-image: url("../FloridiansPictures/_DSF8790-2 1.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
 /*Header*/
 .headerContainer{
-    margin-bottom: 20px;
+    margin: 20px 5%;
     position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
     z-index: 100;
     justify-items: center;
 }
@@ -105,7 +115,7 @@ body {
 @media (max-width: 1040px) {
 
     .mainSection{
-        width: 75%;
+        width: 80%;
     }
 
     .bioParagraph {
@@ -146,4 +156,5 @@ body {
     }
 
 }
+
 
