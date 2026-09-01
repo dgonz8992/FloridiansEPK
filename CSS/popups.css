@@ -1,20 +1,26 @@
 .streamingPlatformPopup{
-    width: 400px;
     position: relative;
-    overflow: hidden;
+    width: max(250px, 20%);
+    height: 600px;
+
     background: none;
-    height: 700px;
+    border-radius: 40px;
 }
 
 .popupContent{
     position: relative;
     z-index: 1;
+
+    height: 100%;
+    overflow-y: auto;
+
     color: white;
 }
 
 .popupBackgroundVideo{
     position: absolute;
     inset: 0;
+    padding: 0;
 
     width: 100%;
     height: 100%;
@@ -23,12 +29,22 @@
     z-index: 0;
 }
 
-.streamingPlatformPopup h2{
-    text-align: center;
-}
-
 .streamingPlatformPopup::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.streamingPlatformPopup h2{
+    text-align: center;
+
+}
+
+.popupHeaderImage{
+    width: 50%;
+    border: black 1px solid;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+
 }
 
 .streamingPlatformList{
@@ -40,6 +56,8 @@
 }
 
 .streamingPlatformLink{
+    display: flex;
+    justify-content: center;
     flex: 1;
     border: 2px solid black;
     border-radius: 20px;
@@ -51,4 +69,12 @@
 
 .streamingLogo{
     width: 100px;
+    height: 27px;
+}
+
+@media (max-width: 499px) {
+
+    .streamingPlatformPopup{
+        height: 450px;
+    }
 }

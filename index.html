@@ -15,76 +15,77 @@
 		<link rel="stylesheet" href="CSS/sidebar.css">
 		<link rel="stylesheet" href="CSS/popups.css">
 
-
 	</head>
 
 	<body>
 		<header class="headerContainer">
-			<nav class="header">
+			<div class="header">
 <!--				<div class="logos">-->
 <!--					<a href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">-->
 <!--						<img class="headerPicture" src="FloridiansPictures/Logos/spotify.WEBP" alt="Spotify">-->
 <!--					</a>-->
 <!--				</div>-->
-				<div class = "headerButtonContainer" id="openStreamingPlatforms">
-				<button class="headerButton">Listen to the Floridians</button>
+				<div class = "headerButtonContainer">
+					<button class="headerButton" id="openStreamingPlatforms">Listen</button>
 				</div>
-
-				<dialog class="streamingPlatformPopup" id="streamingPlatformsPopup">
-					<video class="popupBackgroundVideo" autoplay muted loop playsinline>
-						<source src="FloridiansPictures/copy_509F8D40-8C6A-4B45-8958-5988C7917666.MP4" type="video/mp4">
-					</video>
-
-					<div class="popupContent">
-						<button id="closeStreamingPlatforms">X</button>
-						<h2>Streaming Platforms</h2>
-						<div class="streamingPlatformList">
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-							<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-								<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-							</a>
-						</div>
-					</div>
-				</dialog>
 
 				<h1 class="title">The Floridians</h1>
 
-				<div class = "headerButtonContainer" id="">
-					<button class="headerButton">Listen to the Floridians</button>
+				<div class = "headerButtonContainer">
+					<button class="headerButton" id="">Listen to the Floridians</button>
 				</div>
-				<dialog class="morePopup" id="morePopup">
-					<h2>Stream</h2>
-					<p>Hi Ian</p>
-					<iframe class="videoVertical"
-					        src="https://www.youtube.com/embed/_6HzLIJPH2A"
-					        title="The Ground Performance"
-					        loading="lazy"
-					        allowfullscreen>
-					</iframe>
-					<button id="closeMore">X</button>
-				</dialog>
-			</nav>
+			</div>
 		</header>
+
+		<dialog class="streamingPlatformPopup" id="streamingPlatformsPopup">
+			<video class="popupBackgroundVideo" autoplay muted loop playsinline>
+				<source src="FloridiansPictures/copy_509F8D40-8C6A-4B45-8958-5988C7917666.MP4" type="video/mp4">
+			</video>
+
+			<div class="popupContent">
+				<button id="closeStreamingPlatforms">X</button>
+				<h2>Stream The Floridians Anywhere</h2>
+				<img class="popupHeaderImage" src="FloridiansPictures/PromoPhotos/images.jfif" alt="Popup photo">
+				<div class="streamingPlatformList">
+					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+					</a>
+					<a class="streamingPlatformLink" href="https://music.apple.com/us/artist/the-floridians/1614185028" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/applemusic.jfif" alt="Apple Music">
+					</a>
+					<a class="streamingPlatformLink" href="https://tidal.com/artist/4366032" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/images.png" alt="Tidal">
+					</a>
+					<a class="streamingPlatformLink" href="https://soundcloud.com/thefloridiansband" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/SoundCloud_-_Logo.svg.webp" alt="SoundCloud">
+					</a>
+					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+					</a>
+					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+					</a>
+					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+					</a>
+					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
+					</a>
+				</div>
+			</div>
+		</dialog>
+
+		<dialog class="morePopup" id="morePopup">
+			<h2>Stream</h2>
+			<p>Hi Ian</p>
+			<iframe class="videoVertical"
+					src="https://www.youtube.com/embed/_6HzLIJPH2A"
+					title="The Ground Performance"
+					loading="lazy"
+					allowfullscreen>
+			</iframe>
+			<button id="closeMore">X</button>
+		</dialog>
 
 
 		<main class="mainSectionContainer">
@@ -106,7 +107,7 @@
 			</div>
 
 		<section class="promoPicContainer">
-			<h1 class="promoPicTitle">Promo Pictures</h1>
+			<h1 class="promoPicTitle"></h1>
 			<div class="promoPicGrid">
 				<img class="promoPic" src="FloridiansPictures/PromoPhotos/Ian%20Guitar%20Okee.JPG" alt="Ian Guitar">
 				<img class="promoPic" src="FloridiansPictures/PromoPhotos/DiscoBall.jpg" alt="Discoball">
@@ -118,7 +119,7 @@
 		</section>
 
 		<section class="videosContainer">
-			<h1 class="videoTitle">Videos</h1>
+			<h1 class="videoTitle"></h1>
 			<div class="videoGridHorizontal">
 				<iframe class="videoHorizontal"
 						src="https://www.youtube.com/embed/TG09lIoA9UI"

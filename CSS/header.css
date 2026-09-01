@@ -9,8 +9,8 @@
     background-color: black;
     border-radius: 100px;
     height: 80px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     z-index: 101;
 }
@@ -19,12 +19,10 @@
     font-family: Georgia, serif;
     flex: 1;
     text-align: center;
-    font-size: 50px;
+    font-size: clamp(25px, 3vw, 50px);
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    top: 10px;
-    flex-shrink: 0;
     white-space: nowrap;
 }
 
@@ -38,7 +36,7 @@
 .headerButton{
     width: 60%;
     font-family: Georgia, serif;
-    font-size: 120%;
+    font-size: clamp(12px, 2vw, 20px);
     height: 50px;
     font-weight: 700;
     border-radius: 40px;
@@ -46,8 +44,6 @@
     color: white;
     background: transparent linear-gradient(135deg, grey, #292929);
 }
-
-
 
 @media (max-width: 650px) {
 
