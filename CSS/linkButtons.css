@@ -15,10 +15,10 @@
 }
 
 .headerButton{
-    width: 35%;
+    width: 60%;
     font-family: Georgia, serif;
     font-size: clamp(12px, 2vw, 20px);
-    height: 50px;
+    height: 70px;
     font-weight: 700;
     border-radius: 40px;
     cursor: pointer;
@@ -29,16 +29,5 @@
     box-shadow:
         0 0 10px orange,
         0 0 20px #810081;
-}
-
-@media (max-width: 650px)
-{
-    .button:first-child{
-        transform: translateX(-17%);
-    }
-
-    .button:last-child{
-        transform: translateX(17%);
-    }
 }
 

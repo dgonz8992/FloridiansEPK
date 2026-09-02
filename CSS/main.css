@@ -1,20 +1,17 @@
 
 /* Front Page*/
 .mainSectionContainer{
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 7px;
 }
 
 .mainSection{
-    margin-top: 20px;
     width: min(90%, 1250px);
     justify-content: center;
-
 }
-
 .bioImage{
     width: 100%;
     border-radius: 70px;
@@ -23,7 +20,6 @@
 .bio{
     background-color: #000000;
     border-radius: 70px;
-    z-index: 102;
     font-stretch: auto;
 }
 
