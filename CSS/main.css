@@ -18,16 +18,13 @@
 
 .logoContainer {
     width: 100%;
-    height: 220px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo {
+    display: block;
     width: 70%;
-    max-height: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .bioImage{
@@ -69,6 +66,10 @@
 }
 
 @media (max-width: 650px) {
+
+    .mainSectionContainer{
+        margin-top: 70px;
+    }
 
     .bioParagraph {
         padding: 0 15px 15px 25px;
