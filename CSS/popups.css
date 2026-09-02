@@ -1,10 +1,18 @@
 .streamingPlatformPopup{
     position: relative;
-    width: max(250px, 20%);
+    width: max(300px, 25%);
     height: 600px;
-
     background: none;
-    border-radius: 40px;
+    border-radius: 40px;}
+
+.popupCloseButton{
+    position: fixed;
+    text-align: right;
+    background-color: transparent;
+    color: #a5a5a5;
+    cursor: pointer;
+    border-radius: 50%;
+    border: #a5a5a5 1px solid;
 }
 
 .popupContent{
@@ -70,11 +78,4 @@
 .streamingLogo{
     width: 100px;
     height: 27px;
-}
-
-@media (max-width: 499px) {
-
-    .streamingPlatformPopup{
-        height: 450px;
-    }
 }

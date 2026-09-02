@@ -9,6 +9,7 @@
 }
 
 .mainSection{
+    margin-top: 20px;
     width: min(90%, 1250px);
     justify-content: center;
 

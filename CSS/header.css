@@ -1,17 +1,16 @@
 .headerContainer{
-    margin: 20px 10%;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
     z-index: 100;
-    justify-items: center;
 }
 
 .header{
     display: flex;
-    background-color: black;
     border-radius: 100px;
     height: 80px;
     justify-content: center;
     align-items: center;
-    width: 100%;
     z-index: 101;
 }
 
@@ -20,29 +19,16 @@
     flex: 1;
     text-align: center;
     font-size: clamp(25px, 3vw, 50px);
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 10px 0;
     white-space: nowrap;
-}
 
-.headerButtonContainer{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
+    background: linear-gradient(100deg, blue, rebeccapurple, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
-.headerButton{
-    width: 60%;
-    font-family: Georgia, serif;
-    font-size: clamp(12px, 2vw, 20px);
-    height: 50px;
-    font-weight: 700;
-    border-radius: 40px;
-    cursor: pointer;
-    color: white;
-    background: transparent linear-gradient(135deg, grey, #292929);
+    -webkit-text-stroke: 1px #000000;
 }
 
 @media (max-width: 650px) {

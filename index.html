@@ -14,66 +14,28 @@
 		<link rel="stylesheet" href="CSS/PromoPics.css">
 		<link rel="stylesheet" href="CSS/sidebar.css">
 		<link rel="stylesheet" href="CSS/popups.css">
+		<link rel="stylesheet" href="CSS/linkButtons.css">
+
 
 	</head>
 
 	<body>
 		<header class="headerContainer">
 			<div class="header">
-<!--				<div class="logos">-->
-<!--					<a href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">-->
-<!--						<img class="headerPicture" src="FloridiansPictures/Logos/spotify.WEBP" alt="Spotify">-->
-<!--					</a>-->
-<!--				</div>-->
-				<div class = "headerButtonContainer">
-					<button class="headerButton" id="openStreamingPlatforms">Listen</button>
-				</div>
-
 				<h1 class="title">The Floridians</h1>
-
-				<div class = "headerButtonContainer">
-					<button class="headerButton" id="">Listen to the Floridians</button>
-				</div>
 			</div>
 		</header>
 
-		<dialog class="streamingPlatformPopup" id="streamingPlatformsPopup">
-			<video class="popupBackgroundVideo" autoplay muted loop playsinline>
-				<source src="FloridiansPictures/copy_509F8D40-8C6A-4B45-8958-5988C7917666.MP4" type="video/mp4">
-			</video>
+			<div class = "headerButtonContainer">
+				<div class='button'>
+					<button class="headerButton" id="openStreamingPlatforms">Listen</button>
+				</div>
 
-			<div class="popupContent">
-				<button id="closeStreamingPlatforms">X</button>
-				<h2>Stream The Floridians Anywhere</h2>
-				<img class="popupHeaderImage" src="FloridiansPictures/PromoPhotos/images.jfif" alt="Popup photo">
-				<div class="streamingPlatformList">
-					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-					</a>
-					<a class="streamingPlatformLink" href="https://music.apple.com/us/artist/the-floridians/1614185028" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/applemusic.jfif" alt="Apple Music">
-					</a>
-					<a class="streamingPlatformLink" href="https://tidal.com/artist/4366032" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/images.png" alt="Tidal">
-					</a>
-					<a class="streamingPlatformLink" href="https://soundcloud.com/thefloridiansband" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/SoundCloud_-_Logo.svg.webp" alt="SoundCloud">
-					</a>
-					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-					</a>
-					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-					</a>
-					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-					</a>
-					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
-						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.png" alt="Spotify">
-					</a>
+				<div class='button'>
+					<button class="headerButton" id="">Watch</button>
 				</div>
 			</div>
-		</dialog>
+
 
 		<dialog class="morePopup" id="morePopup">
 			<h2>Stream</h2>
@@ -87,6 +49,43 @@
 			<button id="closeMore">X</button>
 		</dialog>
 
+		<dialog class="streamingPlatformPopup" id="streamingPlatformsPopup">
+			<video class="popupBackgroundVideo" autoplay muted loop playsinline>
+				<source src="FloridiansPictures/copy_509F8D40-8C6A-4B45-8958-5988C7917666.MP4" type="video/mp4">
+			</video>
+
+			<div class="popupContent">
+				<button class="popupCloseButton" id="closeStreamingPlatforms">X</button>
+				<img class="popupHeaderImage" src="FloridiansPictures/PromoPhotos/images.jfif" alt="Popup photo">
+				<h2>Stream The Floridians Anywhere</h2>
+				<div class="streamingPlatformList">
+					<a class="streamingPlatformLink" href="https://open.spotify.com/artist/0bfisWAKeTgT3JMMxTUM9r?si=rfEm60VYQiuInTXdhNrtGw" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/spotify.svg" alt="Spotify">
+					</a>
+					<a class="streamingPlatformLink" href="https://music.apple.com/us/artist/the-floridians/1614185028" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/apple-music.svg" alt="Apple Music">
+					</a>
+					<a class="streamingPlatformLink" href="https://tidal.com/artist/4366032" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/tidal.svg" alt="Tidal">
+					</a>
+					<a class="streamingPlatformLink" href="https://soundcloud.com/thefloridiansband" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/soundcloud.svg" alt="SoundCloud">
+					</a>
+					<a class="streamingPlatformLink" href="https://music.youtube.com/channel/UCwfnJFEpa6EDxDknet7xW6w" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/youtube-music.svg" alt="YouTube Music">
+					</a>
+					<a class="streamingPlatformLink" href="https://music.amazon.com/artists/B09VGGH9JL/the-floridians" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/amazon-music.png" alt="Amazon Music">
+					</a>
+					<a class="streamingPlatformLink" href="https://www.pandora.com/artist/the-floridians/ARnqcPn7gpn7tV" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/pandora.svg" alt="Pandora">
+					</a>
+					<a class="streamingPlatformLink" href="https://www.iheart.com/artist/the-floridians-37706692" target="_blank">
+						<img class="streamingLogo" src="FloridiansPictures/Real%20Logos/iheart.svg" alt="iHeart">
+					</a>
+				</div>
+			</div>
+		</dialog>
 
 		<main class="mainSectionContainer">
 			<div class="mainSection">
