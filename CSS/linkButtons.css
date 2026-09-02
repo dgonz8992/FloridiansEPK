@@ -16,7 +16,7 @@
 
 .headerButton{
     width: 60%;
-    font-family: Georgia, serif;
+    font-family: cooper, serif;
     font-size: clamp(12px, 2vw, 20px);
     height: 70px;
     font-weight: 700;
@@ -24,7 +24,7 @@
     cursor: pointer;
     color: white;
     border: orange 1px solid;
-    background: linear-gradient(135deg, orange, #810081);
+    background: transparent;
 
     box-shadow:
         0 0 10px orange,
