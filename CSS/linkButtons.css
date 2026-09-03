@@ -16,7 +16,6 @@
 
 .headerButton{
     width: 60%;
-
     font-family: Georgia, serif;
     font-weight: bold;
     font-size: clamp(17px, 3vw, 30px);
@@ -30,5 +29,12 @@
     box-shadow:
         0 0 10px orange,
         0 0 20px #810081;
+}
+
+@media (max-width: 500px) {
+    .headerButton{
+        width: 70%;
+        height: 55px;
+    }
 }
 
