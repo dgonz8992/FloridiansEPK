@@ -25,10 +25,13 @@
     color: white;
     border: orange 1px solid;
     background: transparent;
+    letter-spacing: 7px;
 
-    box-shadow:
-        0 0 10px orange,
-        0 0 20px #810081;
+    /*box-shadow:*/
+    /*    0 0 10px orange,*/
+    /*    0 0 20px #810081;*/
+
+    animation: bgcolor 10s ease-in-out infinite, textglow 10s ease-in-out infinite;
 }
 
 @media (max-width: 500px) {
@@ -36,5 +39,41 @@
         width: 70%;
         height: 55px;
     }
+}
+
+@keyframes bgcolor {
+    0% {
+        box-shadow: 0 0 20px orange,
+                    0 0 40px #810081;
+    }
+
+    50% {
+        box-shadow: 0 0 30px orange,
+                    0 0 30px #810081;
+    }
+
+    100% {
+        box-shadow: 0 0 20px orange,
+                    0 0 40px #810081;
+    }
+}
+
+@keyframes textglow {
+    0%{
+        text-shadow: 0 0 0 #ffffff,
+                    0 0 5px #ffffff;
+    }
+
+    50%{
+        text-shadow: 0 0 1px #ffffff,
+                     0 0 2px #ffffff,
+                    0 0 3px #ffffff;
+    }
+
+    100%{
+        text-shadow: 0 0 0 #ffffff,
+        0 0 5px #ffffff;
+    }
+
 }
 
