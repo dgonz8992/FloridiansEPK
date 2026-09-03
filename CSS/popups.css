@@ -1,5 +1,5 @@
 .streamingPlatformPopup{
-    position: relative;
+    position: fixed;
     width: max(300px, 25%);
     height: 600px;
     background: none;
