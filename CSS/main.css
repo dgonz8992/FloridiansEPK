@@ -33,23 +33,22 @@
 }
 
 .bio{
-    background-color: #000000;
     border-radius: 70px;
     z-index: 102;
     font-stretch: auto;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .bioHeader{
     text-align: center;
     color: #ffffff;
     font-weight: 700;
-    padding-top: 8px;
     margin-bottom: -5px;
 }
 
 .bioParagraph{
     text-align: center;
-    padding: 0 10px 15px 10px;
+    padding: 15px 10px 15px 10px;
     font-family: Helvetica, serif;
     font-weight: 500;
     line-height: 130%;
@@ -59,7 +58,7 @@
 @media (max-width: 1040px) {
 
     .bioParagraph {
-        padding: 0 10px 10px 20px;
+        padding: 20px 10px 10px 20px;
         font-size: 16px;
     }
 
@@ -72,7 +71,7 @@
     }
 
     .bioParagraph {
-        padding: 0 15px 15px 25px;
+        padding: 20px 15px 15px 25px;
         font-size: 13px;
     }
 }

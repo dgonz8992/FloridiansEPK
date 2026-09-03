@@ -42,7 +42,11 @@
 }
 
 .streamingPlatformPopup h2{
+    font-family: Georgia, serif;
+    -webkit-text-stroke: 1px black;
+    font-size: 25px;
     text-align: center;
+    padding-top: 60px;
 
 }
 
@@ -56,6 +60,7 @@
 }
 
 .streamingPlatformList{
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     flex: 1;
