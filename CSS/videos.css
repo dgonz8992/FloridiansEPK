@@ -53,12 +53,12 @@
 
 @media (max-width: 1040px) {
 
-    .videoGridVertical {
-        grid-template-columns: repeat(2, minmax(120px, 900px));
-    }
-
     .videoGridHorizontal{
         grid-template-columns: minmax(250px, 900px);
+    }
+
+    .videoGridVertical {
+        grid-template-columns: repeat(2, minmax(120px, 900px));
     }
 }
 
