@@ -41,3 +41,41 @@ socialsPopup.addEventListener("click", (event) => {
     }
 });
 
+const platformLinks = document.querySelectorAll('.streamingPlatformLink');
+
+platformLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+
+        const platformName = link.querySelector('img').alt;
+
+        let platformType;
+
+        if (link.closest('#socialsPopup')) {
+            platformType = 'social';
+        } else {
+            platformType = 'streaming';
+        }
+
+        gtag('event', 'platform_click', {
+            platform_name: platformName,
+            platform_type: platformType,
+            link_url: link.href
+        });
+    });
+});
+
+document.querySelector('#openStreamingPlatforms')
+    .addEventListener('click', () => {
+        gtag('event', 'menu_open', {
+            menu_name: 'Listen'
+        });
+    });
+
+
+document.querySelector('#openSocials')
+    .addEventListener('click', () => {
+        gtag('event', 'menu_open', {
+            menu_name: 'Follow'
+        });
+    });
+
