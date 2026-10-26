@@ -3,7 +3,8 @@
     width: max(300px, 25%);
     height: 600px;
     background: none;
-    border-radius: 40px;}
+    border-radius: 40px;
+}
 
 .popupCloseButton{
     position: fixed;
@@ -47,6 +48,7 @@
     font-size: 25px;
     text-align: center;
     padding-top: 60px;
+    hite-space: nowrap;
 
 }
 

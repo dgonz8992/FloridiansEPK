@@ -12,11 +12,11 @@
 .mainSection{
     margin-top: 20px;
     width: min(90%, 1250px);
-
 }
 
 .logoContainer {
     width: 100%;
+    maring-bottom: 80px;
 }
 
 .logo {
@@ -66,6 +66,10 @@
 
     .mainSectionContainer{
         margin-top: 70px;
+    }
+
+    .logoContainer {
+        margin-bottom: 0;
     }
 
     .bioParagraph {

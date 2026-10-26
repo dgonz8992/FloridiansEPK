@@ -41,3 +41,23 @@ socialsPopup.addEventListener("click", (event) => {
     }
 });
 
+const openNewRelease = document.getElementById("openNewRelease");
+const closeNewRelease = document.getElementById("closeNewRelease");
+const popupNewRelease = document.getElementById("newReleaseStreaming");
+
+openNewRelease.addEventListener("click", () => {
+    popupNewRelease.showModal()
+    document.body.style.overflow = "hidden";
+});
+
+closeNewRelease.addEventListener("click", () => {
+    popupNewRelease.close();
+    document.body.style.overflow = "";
+});
+
+popupNewRelease.addEventListener("click", (event) => {
+    if (event.target === popupNewRelease) {
+        popupNewRelease.close();
+        document.body.style.overflow = "";
+    }
+});

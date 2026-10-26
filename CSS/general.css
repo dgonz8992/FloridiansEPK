@@ -14,16 +14,15 @@ body {
 body::before {
     content: "";
     position: fixed;
-    top: -100px;
+    top: -200px;
     right: 0;
     bottom: -100px;
     left: 0;
 
-    background-image: url("../FloridiansPictures/IMG_6022.webp");
+    background-image: url("../FloridiansPictures/IMG_8274.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .7;
 
     z-index: -1;
 }
